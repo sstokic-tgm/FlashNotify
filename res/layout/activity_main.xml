@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <TextView
+        android:id="@+id/textViewDetectState"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Not detecting"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/buttonDetectToggle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewDetectState"
+        android:text="Turn on" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/buttonDetectToggle" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Calls"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <CheckBox
+                android:id="@+id/call_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Messages"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <CheckBox
+                android:id="@+id/message_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:enabled="false"
+                android:text="Whatsapp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <CheckBox
+                android:id="@+id/whatsapp_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:enabled="false"
+                android:text="Alarm Clock"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <CheckBox
+                android:id="@+id/alarm_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false" />
+
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/buttonExit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Exit" />
+
+</RelativeLayout>
